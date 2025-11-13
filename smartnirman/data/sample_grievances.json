@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1731439200,
+    "name": "Suman Thapa",
+    "contact": "+977 98xxxxxxx1",
+    "ward": "Hetauda-5",
+    "project_id": null,
+    "subject": "Pothole on Lal Bazaar road",
+    "details": "There's a large pothole near the market intersection that's been there for weeks. Vehicles are swerving around it and it's dangerous.",
+    "photo_url": "/SMARTNIRMAN/uploads/photos/1731439200_pothole.jpg",
+    "status": "in_progress",
+    "created_at": "2025-11-12 14:30:00",
+    "acknowledged_at": "2025-11-12 16:45:00"
+  },
+  {
+    "id": 1731355800,
+    "name": "Ramesh Kumar",
+    "contact": "ramesh@email.com",
+    "ward": "Hetauda-3",
+    "project_id": 101,
+    "subject": "Construction dust affecting homes",
+    "details": "The new road construction is creating too much dust. Residents' homes are getting covered daily.",
+    "photo_url": null,
+    "status": "open",
+    "created_at": "2025-11-11 09:15:00"
+  },
+  {
+    "id": 1731272400,
+    "name": "Priya Sharma",
+    "contact": "+977 98xxxxxxx2",
+    "ward": "Hetauda-7",
+    "project_id": null,
+    "subject": "Broken water pipe on Sukra Marg",
+    "details": "Water leaking from a broken pipe near house number 42. It's been leaking for 3 days and water is wasted.",
+    "photo_url": "/SMARTNIRMAN/uploads/photos/1731272400_waterpipe.jpg",
+    "status": "resolved",
+    "created_at": "2025-11-10 11:20:00",
+    "acknowledged_at": "2025-11-10 14:00:00",
+    "resolved_at": "2025-11-12 10:30:00"
+  }
+]

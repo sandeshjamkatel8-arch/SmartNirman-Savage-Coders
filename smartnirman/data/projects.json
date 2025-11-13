@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "Road Construction \u2013 Ward 4",
+        "location": "Hetauda-04",
+        "contractor_name": "ABC Builders",
+        "budget_total": 5000000,
+        "status": "Ongoing",
+        "desc": "Blacktopping 1km road",
+        "start_date": "2025-01-03",
+        "end_date": "2025-04-20"
+    },
+    {
+        "id": 1763008543,
+        "title": "Road Construcition",
+        "location": "Hetauda",
+        "contractor_name": "Kalika",
+        "budget_total": 2000,
+        "status": "Ongoing",
+        "desc": "ejawefnadfasdc"
+    },
+    {
+        "id": 1763009507,
+        "title": "Manish Construction",
+        "location": "Hetauda 17",
+        "contractor_name": "Sandesh",
+        "budget_total": 100000,
+        "status": "Completed",
+        "desc": "This is my projects"
+    },
+    {
+        "id": 1763015492,
+        "title": "TU Cricket Ground",
+        "location": "Kritipur",
+        "contractor_name": "Manish Parajuli",
+        "budget_total": 20000000,
+        "status": "Completed",
+        "desc": "TU Cricket Ground is made by KP OLI Government"
+    }
+]

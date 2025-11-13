@@ -1,0 +1,527 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  line-height: 1.5;
+}
+
+/* --- Admin Header --- */
+
+.admin-header {
+  background: #ffffff;
+  border-bottom: 2px solid #b91c1c;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.admin-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.admin-logo:hover {
+  opacity: 0.85;
+}
+
+.admin-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.admin-brand-name {
+  font-weight: 700;
+  color: #b91c1c;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.admin-brand-subtitle {
+  font-size: 10px;
+  color: #6b7280;
+  line-height: 1;
+  font-weight: 500;
+}
+
+/* Navigation Menu */
+
+.admin-nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.admin-nav-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.admin-nav-link:hover {
+  color: #b91c1c;
+  background-color: #fee2e2;
+}
+
+.admin-nav-link.active {
+  color: #ffffff;
+  background-color: #b91c1c;
+}
+
+.admin-nav-link.logout {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+}
+
+.admin-nav-link.logout:hover {
+  background-color: #fee2e2;
+  border-color: #b91c1c;
+}
+
+/* --- Main Content --- */
+
+.wrap {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 0 12px 40px 12px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.stack-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 7px 8px;
+  border-radius: 3px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.btn {
+  background: #b91c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.btn:hover {
+  background: #991b1b;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e5e7eb;
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+.table th {
+  background: #e5e7eb;
+  font-weight: 600;
+}
+
+/* --- Login Page --- */
+
+.login-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  padding: 20px;
+}
+
+.login-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  border-top: 4px solid #b91c1c;
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #b91c1c;
+  margin: 0 0 24px 0;
+  font-size: 28px;
+}
+
+.login-card label {
+  display: block;
+  margin: 16px 0 6px 0;
+  font-weight: 600;
+  color: #333333;
+  font-size: 13px;
+}
+
+.login-card .input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 6px;
+  transition: border-color 0.2s;
+}
+
+.login-card .input:focus {
+  outline: none;
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.1);
+}
+
+.login-card .btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #b91c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-card .btn:hover {
+  background: #991b1b;
+}
+
+.login-card .btn:active {
+  transform: scale(0.98);
+}
+
+.error {
+  margin-top: 16px;
+  padding: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid #b91c1c;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* --- Success Message --- */
+
+.success {
+  margin-top: 16px;
+  padding: 12px;
+  background: #dcfce7;
+  color: #166534;
+  border-left: 4px solid #22c55e;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* --- Registration Page --- */
+
+.register-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0 0 24px 0;
+}
+
+.login-card small {
+  display: block;
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+  font-weight: normal;
+}
+
+.login-card .btn-secondary {
+  background: #6b7280;
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login-card .btn-secondary:hover {
+  background: #4b5563;
+  text-decoration: none;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.register-footer a {
+  color: #b91c1c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 768px) {
+  .admin-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .admin-brand-name {
+    font-size: 16px;
+  }
+
+  .admin-nav {
+    width: 100%;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .admin-nav-link {
+    flex: 1 1 auto;
+    min-width: 70px;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .wrap {
+    padding: 0 12px 30px 12px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  .table th,
+  .table td {
+    padding: 4px 6px;
+  }
+
+  .login-wrap {
+    padding: 16px;
+    min-height: auto;
+  }
+
+  .login-card {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .login-card h1 {
+    font-size: 24px;
+  }
+
+  .register-subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .login-card small {
+    font-size: 10px;
+  }
+
+  .register-footer {
+    margin-top: 16px;
+    padding-top: 14px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header-inner {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .admin-logo {
+    margin-bottom: 8px;
+  }
+
+  .admin-brand-name {
+    font-size: 14px;
+  }
+
+  .admin-nav {
+    width: 100%;
+    gap: 4px;
+  }
+
+  .admin-nav-link {
+    flex: 1;
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  .card {
+    padding: 10px 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .login-wrap {
+    padding: 12px;
+    min-height: 100vh;
+  }
+
+  .login-card {
+    padding: 24px 16px;
+  }
+
+  .login-card h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .login-card label {
+    margin: 14px 0 5px 0;
+    font-size: 12px;
+  }
+
+  .login-card .input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .login-card .btn {
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .error {
+    margin-top: 14px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .success {
+    margin-top: 14px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .register-subtitle {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .login-card small {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+  .register-footer {
+    margin-top: 14px;
+    padding-top: 12px;
+    font-size: 11px;
+  }
+
+  .login-card .btn-secondary {
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
